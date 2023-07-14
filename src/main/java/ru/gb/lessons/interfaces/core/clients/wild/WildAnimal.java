@@ -1,8 +1,8 @@
-package ru.gb.lessons.interfaces.core.clients.wild;
+package Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.wild;
 
-import ru.gb.lessons.interfaces.core.clients.Animal;
-import ru.gb.lessons.interfaces.core.clients.owners.Owner;
-import ru.gb.lessons.interfaces.core.clients.supports.Record;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.Animal;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners.Owner;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.supports.Record;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

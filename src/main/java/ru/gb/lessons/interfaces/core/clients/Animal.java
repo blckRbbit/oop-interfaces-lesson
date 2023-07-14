@@ -1,7 +1,7 @@
-package ru.gb.lessons.interfaces.core.clients;
+package Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients;
 
-import ru.gb.lessons.interfaces.core.clients.owners.Owner;
-import ru.gb.lessons.interfaces.core.clients.supports.Record;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners.Owner;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.supports.Record;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
-  Абстракция животного - пациента ветклиники.
+ * Абстракция животного - пациента ветклиники.
  */
-public class Animal {
+public abstract class Animal {
     protected final String CLASS_NAME = "The " + getClass().getSimpleName();
 
     protected int id; //идентификатор животного для хранения в БД
@@ -37,7 +37,7 @@ public class Animal {
         //todo реализовать
     }
 
-    public void fly() {
+/*    public void fly() {
         System.out.println(CLASS_NAME + " flying.");
     }
 
@@ -47,7 +47,7 @@ public class Animal {
 
     public void run() {
         System.out.println(CLASS_NAME + " is moving.");
-    }
+    }*/
 
     //todo ПО ПРАВИЛАМ "ЧИСТОГО КОДА", МЕТОДЫ, ВЫЗЫВАЕМЫЕ ВНУТРИ ДРУГОГО МЕТОДА,
     // ЛУЧШЕ РАСПОЛАГАТЬ СРАЗУ ПОД ЭТИМ МЕТОДОМ
@@ -127,7 +127,12 @@ public class Animal {
 
     @Override
     public String toString() {
-        //todo Грамотно переделать этот метод!
-        return super.toString();
+        return CLASS_NAME +
+                "\n id = " + id +
+                "\n name = " + name +
+                "\n number of limbs = " + numberOfLimbs +
+                "\n registration date = " + registrationDate +
+                "\n owner = " + owner +
+                "\n records = " + records;
     }
 }

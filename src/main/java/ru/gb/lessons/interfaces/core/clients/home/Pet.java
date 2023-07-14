@@ -1,14 +1,14 @@
-package ru.gb.lessons.interfaces.core.clients.home;
+package Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.home;
 
-import ru.gb.lessons.interfaces.core.clients.Animal;
-import ru.gb.lessons.interfaces.core.clients.owners.Owner;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.Animal;
+import Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners.Owner;
 
 import java.time.LocalDate;
 
 /**
  Абстракция домашнего животного
  */
-public class Pet extends Animal {
+public abstract class Pet extends Animal {
     public Pet() {
     }
 

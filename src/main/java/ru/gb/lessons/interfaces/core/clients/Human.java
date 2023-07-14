@@ -1,4 +1,4 @@
-package ru.gb.lessons.interfaces.core.clients;
+package Homework_2.src.main.java.ru.gb.lessons.interfaces.core.clients;
 
 /**
  Абстракция человека
